@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>함수시계</title>
+    <script>
+        setInterval(() => {
+            let timer = new Date();
+            let h = timer.getHours();
+            let m = timer.getMinutes();
+            let s = timer.getSeconds();
+            let time = h+" : "+m+" : "+s;
+            
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }, 1000);
+    </script>
+</head>
+    <style>
+        h1 {text-align: center;
+            font-size: 50px;
+            line-height: 200px;
+            width: 500px;height: 200px;
+            color:red;
+            background-color:black;
+            padding: 20px;
+    }
+        
+    </style>
+<body>
+    <h1 id="time"></h1>
+</body>
+</html>
